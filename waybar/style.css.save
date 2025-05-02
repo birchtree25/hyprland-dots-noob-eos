@@ -1,0 +1,107 @@
+
+/* General Waybar style */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* Waybar bar itself */
+window#waybar {
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #ffffff;
+
+    border-bottom: 2px solid #5e81ac;
+    
+	padding: 5px;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: transparent;
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #d8dee9;
+    background: transparent;
+    border: none;
+}
+
+#workspaces button.focused {
+    color: #ffffff;
+    background-color: #5e81ac;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent {
+    background-color: #bf616a;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Center module (window title) */
+#window {
+    color: #e5e9f0;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* Modules on the right */
+#pulseaudio, #network, #memory, #temperature, #backlight, #battery, #battery#bat2,
+#clock, #tray, #custom-power, #hyprland-language {
+    padding: 0 8px;
+    margin: 0 2px;
+    background-color: #3b4252;
+    border-radius: 4px;
+}
+
+#temperature.critical {
+    color: #bf616a;
+}
+
+/* Clock */
+#clock {
+    background-color: #4c566a;
+    font-weight: bold;
+}
+
+/* Tray */
+#tray {
+    background-color: #2e3440;
+}
+
+/* Power Button */
+#custom-power {
+    background-color: #bf616a;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hover effect */
+#workspaces button:hover,
+#pulseaudio:hover,
+#network:hover,
+#memory:hover,
+#temperature:hover,
+#backlight:hover,
+#battery:hover,
+#battery#bat2:hover,
+#clock:hover,
+#tray:hover,
+#custom-power:hover {
+    background-color: #81a1c1;
+    color: #2e3440;
+}
+
+/* Tooltip styling */
+tooltip {
+    background-color: #3b4252;
+    color: #eceff4;
+    border-radius: 6px;
+    border: 1px solid #81a1c1;
+    padding: 5px;
+}
