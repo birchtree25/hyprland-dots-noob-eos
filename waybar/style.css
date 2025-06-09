@@ -1,4 +1,6 @@
 
+@import url("file:///home/bhavesh/.cache/wal/colors-waybar.css");
+
 /* General Waybar style */
 * {
     border: none;
@@ -8,87 +10,73 @@
     min-height: 0;
 }
 
-/* Waybar bar itself */
 window#waybar {
-    background-color: rgba(30, 30, 30, 0.9);
-    color: #ffffff;
-    border-bottom: 2px solid #5e81ac;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    /*background-color: @background;*/
+    background-color: alpha(@background, 0.6);
+    color: @foreground;
+    border-bottom: 2px solid @color4;
+    padding: 8px 5px;
 }
 
-
-
-
-/* Workspaces */
 #workspaces {
     background-color: transparent;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 #workspaces button {
-    padding: 0 6px;
-    color: #d8dee9;
+    padding: 0 3px;
+    color: @foreground;
     background: transparent;
     border: none;
 }
 
 #workspaces button.active {
-    color: #ffffff;
-    background-color: #5e81ac;
+    color: @foreground;
+    background-color: @color4;
     border-radius: 4px;
 }
 
 #workspaces button.urgent {
-    background-color: #bf616a;
-    color: #ffffff;
+    background-color: @color1;
+    color: @foreground;
     border-radius: 4px;
 }
 
-/* Center module (window title) */
 #window {
-    color: #e5e9f0;
-/*    background-color: transparent;*/
+    color: @color6;
     font-weight: bold;
-    margin-right:5px;
+    margin-right: 5px;
 }
 
-/* Modules on the right */
-#pulseaudio, #network, #memory, #temperature, #backlight, #battery, #battery#bat2,
-#clock, #window, #tray, #custom-power{
-    padding: 0 8px;
-    margin: 0 2px;
-    background-color: #3b4252;
+#pulseaudio, #network, #memory, #temperature, #backlight,
+#battery, #battery#bat2, #clock, #window, #tray, #custom-power {
+    padding: 0 5px;
+    margin: 0 1px;
+    background-color: @color0;
     border-radius: 4px;
-    margin-bottom:3px;
-    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-top: 3px;
 }
 
 #temperature.critical {
-    color: #bf616a;
+    color: @color1;
 }
 
-/* Clock */
 #clock {
-    background-color: #4c566a;
+    background-color: @color0;
     font-weight: bold;
 }
 
-/* Tray */
 #tray {
-    background-color: #2e3440;
+    background-color: @color0;
 }
 
-/* Power Button */
 #custom-power {
-    background-color: #bf616a;
-    color: #fff;
+    background-color: @color1;
+    color: @foreground;
     font-weight: bold;
 }
 
-/* Hover effect */
 #workspaces button:hover,
 #pulseaudio:hover,
 #network:hover,
@@ -100,15 +88,14 @@ window#waybar {
 #clock:hover,
 #tray:hover,
 #custom-power:hover {
-    background-color: #81a1c1;
-    color: #2e3440;
+    background-color: @color4;
+    color: @background;
 }
 
-/* Tooltip styling */
 tooltip {
-    background-color: #3b4252;
-    color: #eceff4;
+    background-color: @color0;
+    color: @foreground;
     border-radius: 6px;
-    border: 1px solid #81a1c1;
+    border: 1px solid @color4;
     padding: 5px;
 }
