@@ -7,21 +7,21 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        
-    ],
+        "custom/applauncher", //wofi launcher from this button
+	"hyprland/workspaces",
+            ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
 //        "mpd",
 //        "idle_inhibitor",
-        "pulseaudio",
+       "pulseaudio",
 //        "network",
 //        "power-profiles-daemon",
 //        "cpu",
-        "memory",
-        "temperature",
+//        "memory",
+//        "temperature",
         "backlight",
 //        "keyboard-state",
 //        "hyprland/language",
@@ -212,5 +212,11 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    },
+
+    "custom/applauncher":{
+    	"format": "",
+	"on-click" : "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun",
+	"tooltip": false
     }
 }

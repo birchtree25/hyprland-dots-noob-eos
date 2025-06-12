@@ -14,15 +14,23 @@ window#waybar {
     /*background-color: @background;*/
     background-color: alpha(@background, 0.6);
     color: @foreground;
-    border-bottom: 2px solid @color4;
+ /*   border-bottom: 2px solid @color4;*/
     padding: 8px 5px;
 }
 
+#custom-applauncher,
 #workspaces {
     background-color: transparent;
     margin: 0 2px;
 }
 
+#custom-applauncher{
+    padding: 5px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+#custom-applauncher,
 #workspaces button {
     padding: 0 3px;
     color: @foreground;
@@ -42,6 +50,7 @@ window#waybar {
     border-radius: 4px;
 }
 
+
 #window {
     color: @color6;
     font-weight: bold;
@@ -50,12 +59,11 @@ window#waybar {
 
 #pulseaudio, #network, #memory, #temperature, #backlight,
 #battery, #battery#bat2, #clock, #window, #tray, #custom-power {
-    padding: 0 5px;
-    margin: 0 1px;
+    padding: 0 10px;
+/*    margin: 0 1px;*/
     background-color: @color0;
     border-radius: 4px;
-    margin-bottom: 4px;
-    margin-top: 3px;
+    margin: 3px;
 }
 
 #temperature.critical {
@@ -70,13 +78,6 @@ window#waybar {
 #tray {
     background-color: @color0;
 }
-
-#custom-power {
-    background-color: @color1;
-    color: @foreground;
-    font-weight: bold;
-}
-
 #workspaces button:hover,
 #pulseaudio:hover,
 #network:hover,
@@ -87,10 +88,22 @@ window#waybar {
 #battery#bat2:hover,
 #clock:hover,
 #tray:hover,
+#custom-applauncher:hover,
 #custom-power:hover {
     background-color: @color4;
     color: @background;
 }
+
+
+#custom-power {
+    background-color: @color0;
+    color: @foreground;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+    margin-right: 3px;
+}
+
 
 tooltip {
     background-color: @color0;
