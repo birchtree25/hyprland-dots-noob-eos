@@ -21,7 +21,7 @@
 //        "power-profiles-daemon",
 //        "cpu",
 //        "memory",
-//        "temperature",
+        "temperature",
         "backlight",
 //        "keyboard-state",
 //        "hyprland/language",
@@ -83,6 +83,7 @@
             "on": " "
         },
         "single-icons": {
+
             "on": "1 "
         },
         "state-icons": {
@@ -215,8 +216,9 @@
     },
 
     "custom/applauncher":{
-    	"format": "",
-	"on-click" : "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun",
+    	"format": "",
+	//"on-click" : "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun",
+	"on-click" : "kitty",
 	"tooltip": false
-    }
+    },
 }
