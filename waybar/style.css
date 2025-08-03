@@ -8,11 +8,14 @@
     font-family: JetBrainsMono Nerd Font, monospace;
     font-size: 13px;
     min-height: 0;
+    margin: 2px;
 }
 
 window#waybar {
+    margin-top: 5px;
+    border-radius: 17px;
     /*background-color: @background;*/
-    background-color: alpha(@background, 0.6);
+    background-color: alpha(@background, 0.5);
     color: @foreground;
  /*   border-bottom: 2px solid @color4;*/
     padding: 8px 5px;
@@ -24,7 +27,6 @@ window#waybar {
     margin-right: 1px;
     margin-top:1px;
     margin-bottom:1px;
-
 }
 
 
@@ -45,8 +47,6 @@ window#waybar {
     padding: 0 9px;
     padding-right: 10px;
 }
-
-
 
 #workspaces button.active {
     color: @color0;
@@ -86,17 +86,17 @@ window#waybar {
     font-weight: bold;
     color: @color0;
 }
-
-#tray {
-    background-color: @color6;
-}
-
 #workspaces button:hover{
     background-color: @color0;
     border-radius: 4px;
     color: @color4;
     border-radius: 17px;
     
+}
+
+
+#tray {
+    background-color: @color0;
 }
 
 #pulseaudio:hover,
@@ -116,12 +116,12 @@ window#waybar {
 
 
 #custom-power {
-    background-color: @color6;
-    color: @color0;
+    color: @color6;
     font-weight: bold;
     padding: 5px;
     padding-left: 10px;
-margin-right: 3px;
+    margin-right: 3px;
+    background-color: @color0;
 }
 
 
