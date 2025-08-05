@@ -87,7 +87,7 @@
    },
     {
 	"type" : "cpu" ,
-	"key" : "  CPU" ,
+	"key" : "  CPU" 
 
    },
    {
@@ -99,13 +99,13 @@
        {
 	"type" : "memory" ,
 	"key" : "  RAM" ,
-	"format" : "{2}"
+	"format" : "{1} / {2} "
 
    },
    {
 	"type" : "disk" ,
 	"key" : "  Disk" ,
-	"format" : "{2}"
+	"format" : "{1} / {2}"
 
    },
   {

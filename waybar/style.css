@@ -124,6 +124,9 @@ window#waybar {
     background-color: @color0;
 }
 
+#battery#bat2{
+    font-weight: bold;
+}
 
 tooltip {
     background-color: @color0;

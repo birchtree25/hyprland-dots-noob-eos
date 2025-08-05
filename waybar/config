@@ -140,10 +140,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "B:{capacity}%",
-        "format-full": "B:{capacity}%",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format": "↓ {capacity}%",
+        "format-full": "> {capacity}%",
+        "format-charging": "↑ {capacity}%",
+        "format-plugged": "↑ {capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
