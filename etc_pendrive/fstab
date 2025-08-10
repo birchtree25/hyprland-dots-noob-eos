@@ -10,6 +10,6 @@ UUID=3732d75d-6e97-4609-9ce9-495d39932288 /              ext4    noatime    0 1
 tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
 
 ####
-#UNUCOMMENT THE LAST LINE TO MOUNT THE FUCKASS SANDISK PD, probably some file type errors thats why its not mounting
+#UNUCOMMENT THE LAST LINE TO MOUNT THE FUCKASS SANDISK PD, probably some ntfs errors thats why its not mounting
 # /dev/sda1
 #/dev/sda1		    /media/Drive  		 ntfs-3g  rw,uid=1000,gid=1000,notime,noauto,umask=0022,fmask=0022 0 0
