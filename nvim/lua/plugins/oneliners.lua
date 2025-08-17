@@ -24,4 +24,11 @@ return {
             require('nvim-highlight-colors').setup({})
         end
     },
+
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        }
+    }
 }
