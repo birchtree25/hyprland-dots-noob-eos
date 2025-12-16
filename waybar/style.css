@@ -123,10 +123,6 @@ window#waybar {
     background-color: @color0;
 }
 
-#battery#bat2{
-    font-weight: bold;
-}
-
 
 #battery.good{
     background-color: #29993c;
@@ -155,6 +151,10 @@ window#waybar {
 #battery.critical:hover {
     color:#d10c02 ;
     background-color: @color0;
+}
+
+#battery{
+    font-weight: bold;
 }
 tooltip {
     background-color: @color0;
