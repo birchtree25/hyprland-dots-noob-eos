@@ -1,4 +1,4 @@
- 
+
 @import url("file:///home/bhavesh/.cache/wal/colors-waybar.css");
 
 /* General Waybar style */
@@ -59,7 +59,6 @@ window#waybar {
     color: @foreground;
     border-radius: 17px;
 }
-
 
 #window {
     color: @color0;
@@ -128,6 +127,35 @@ window#waybar {
     font-weight: bold;
 }
 
+
+#battery.good{
+    background-color: #29993c;
+}
+
+#battery.good:hover{
+    color: #29993c;
+    background-color: @color0 ;
+}
+
+
+
+#battery.warning{
+    background-color: #edba02;
+}
+
+#battery.warning:hover{
+    color: #edba02;
+    background-color: @color0 ;
+}
+
+#battery.critical {
+    background-color: #d10c02;
+}
+
+#battery.critical:hover {
+    color:#d10c02 ;
+    background-color: @color0;
+}
 tooltip {
     background-color: @color0;
     color: @foreground;
