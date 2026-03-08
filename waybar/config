@@ -112,7 +112,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -132,7 +132,7 @@
     "backlight": {
         // "device": "acpi_video1",
         //"format": "{percent}% {icon}",
-        "format": "B:{icon}",
+        "format": "b:{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -141,10 +141,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "↓ {capacity}%",
-        "format-full": "> {capacity}%",
-        "format-charging": "↑ {capacity}%",
-        "format-plugged": "↑ {capacity}% ",
+        "format": "{capacity}%",
+        "format-full": "󱐋 {capacity}%",
+        "format-charging": "󱐋 {capacity}%",
+        "format-plugged": "󱐋 {capacity}%",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
